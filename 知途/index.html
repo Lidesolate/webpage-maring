@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>知途</title>
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<style type="text/css">
+		.background1{
+			color: rgba(255,0,0,1);
+		}
+		.background2{
+			color: rgba(0,0,0,1);
+		}
+		p::after{     /*清除浮动*/
+			display: block;
+			content: "";
+			clear: both;   /*自动清除浮动*/
+			height: 0;
+
+		}
+		img{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<p class="background1">
+		元素选择器的权重最低<br/>
+		类选择器的权重是10<br/>
+		元素选择器的权重是1<br/>
+		ID选择器的权重是100<br/>
+		行内选择期的权重是1000<br/>
+		通过累加计算权重<br/>
+		不建议用ID、行内选择器<br/>
+	</p>
+	<hr/>
+	<p class="background2">
+		文档流，从上到下，从左到右，不占位置<br/>
+		浮动，脱离文档流	
+	</p>
+	<hr/>
+	<p class="background1">
+		盒子模型：content(内容) padding (内编边距) margin(外边距) border(边框)
+	</p>
+	<hr/>
+	<p class="background2">
+		清除浮动：<br/>
+		.clearfix::after{     /*清除浮动*/<br/>
+			display: block;<br/>
+			content: "";<br/>
+			clear: both;   /*自动清除浮动*/<br/>
+			height: 0;<br/>
+
+		}
+	</p>
+	<hr/>
+	<p class="background1">
+		type规定input元素类型<br/>
+		<img src="images/QQ截图20170903093518.png">
+	</p>
+	<hr/>
+	<p class="background2">
+		&lttextarea&gt<br/>
+		<img src="images/QQ截图20170903093518.png">
+	</p>
+	<hr/>
+	<p class="background1">
+		&lt select &gt<br/>
+		<img src="images/QQ截图20170903094717.png">
+	</p>
+	<hr/>
+	<p class="background2">
+		大图----图片精灵<br/>
+		优点：减少去服务器请求的次数
+	</p>
+	<hr/>
+	<p class="background1">
+		CSS定位：position属性<br/>
+		<img src="images/QQ截图20170903105601.png">
+	</p>
+	<hr/>
+	<p class="background2">
+		<button class="use_box">点击我弹出框</button>
+		<p>
+			&ltbutton class="use_box"&gt点击我弹出框&lt/button&gt
+			<br/>
+			&ltscript type="text/javascript"&gt<br/>
+				 $(function(){<br/>
+		        	var useBox = $(".use_box");<br/>
+		        	useBox.click(function(){<br/>
+		        		alert("ok");<br/>
+		        	})<br/>
+		        }) <br/>
+			&lt/script&gt<br/>
+		</p>
+	</p>
+	<hr/>
+
+
+
+
+
+
+	<script type="text/javascript">
+		 $(function(){
+        	var useBox = $(".use_box");
+        	useBox.click(function(){
+        		alert("ok");
+        	})
+        }) 
+	</script>
+</body>
+</html>

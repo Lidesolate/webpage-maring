@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+        .hide-div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .change{
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="show">show</button>
+    <button class="hide">hide</button>
+    <button class="toggle">toggle</button>
+    <button class="slideDown">slideDown</button>
+    <button class="slideUp">slideUp</button>
+    <button type="button" class="slideToggle">slideToggle</button>
+    <button class="addClass">添加背景颜色</button>
+    <button class="removeClass">移除背景颜色</button>
+    <button class="toggleClass">切换背景颜色</button>
+    <div class="hide-div"></div>
+    <script type="text/javascript">
+        $(function(){
+            // $(".show").click(function(){
+            //     $(".hide-div").show()
+            // })
+            // $(".hide").click(function(){
+            //     $(".hide-div").hide()
+            // })
+            // $(".toggle").click(function(){
+            //     $(".hide-div").toggle()
+            // })
+            // $(".slideDown").click(function(){
+            //     $(".hide-div").slideDown()
+            // })
+            // $(".slideUp").click(function(){
+            //     $(".hide-div").slideUp()
+            // })
+            // $(".slideToggle").click(function(){
+            //     $(".hide-div").slideToggle()
+            // })
+            // $(".addClass").click(function(){
+            //     $(this).css("background":"yellow")
+            //     $(".hide-div").addClass("change")
+            // })
+            // $(".removeClass").click(function(){
+            //     $(".hide-div").removeClass("change")
+            // })
+            // $(".toggleClass").click(function(){
+            //     $(".hide-div").toggleClass("change")
+            // })
+            $("button").click(function(){
+                // $("button").removeClass("change");
+                // $(this).addClass("change");
+                $(this).addClass("change").siblings().removeClass("change");
+            })
+
+
+        })
+    </script>
+</body>
+</html>

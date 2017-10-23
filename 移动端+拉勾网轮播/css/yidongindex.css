@@ -1,0 +1,143 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family:PingFangSC-Regular;
+}
+html,body{
+	font-size:62.5%;
+}
+
+.BLO{
+	background-image: url(../images/1.png);
+}
+.NON{
+	background-image: url(../images/2.png);
+}
+.nosele{
+	background-image: url(../images/2.png);
+}
+.sele{
+	background-image: url(../images/1.png);
+}
+.clearfix::after{
+	content: "";
+	clear: both;
+	height: 0px;
+	display: block;
+}
+.F_R{
+	float: right;
+}
+.F_L{
+	float: left;
+}
+.head{
+	padding: 1.5rem;
+	background-color: #eee;
+}
+.head span{
+	font-size:1.4rem;
+	color:#666666;
+	letter-spacing:0.072rem;
+	line-height:1.4rem;
+	text-align:left;
+}
+.head span strong{
+	color: #4E96F7;
+}
+.User .User_box{
+	width: 100%;
+	position: relative;
+}
+.User .User_box .User_img{
+	width: 4.3rem;
+	height: 4.3rem;
+	margin: 1.5rem;
+	background-color: #ccc;
+	border-radius: 2.2rem;
+	float: left;
+}
+.User .User_box .User_info{
+	display: block;
+	margin-top: 1.9rem;
+	float: left;
+}
+.User .User_box .User_info .User_name{
+	font-size:1.6rem;
+	color:#323232;
+	letter-spacing:-0.04rem;
+	line-height:1.6rem;
+	text-align:justify;
+}
+.User .User_box .User_info .User_illness{
+	font-size:1.6rem;
+	color:#666;
+	letter-spacing:-0.04rem;
+	line-height:1.6rem;
+	text-align:left;
+	margin-left: 1rem;
+}
+.User .User_box .User_info .xuan{
+	width: 2.2rem;
+	height:2.2rem;
+	position: absolute;
+	top: 1.6rem;
+	right: 1.6rem;
+	background-size: cover;
+}
+.User .User_box .User_info .User_sex{
+	font-size:1.3rem;
+	color:#666666;
+	letter-spacing:0;
+	text-align:justify;
+}
+.User .User_box .state{
+	float: left;
+	margin :0 0 0 7.3rem;
+	clear: both;
+}
+.User .User_box .state span{
+	font-size:1.3rem;
+	color:#bcbcbc;
+	line-height:1.3rem;
+	text-align:left;
+	margin-right: 1.1rem;
+}
+.foot{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.foot .next{
+	width: 50%;
+	font-size:18px;
+	color:#ffffff;
+	line-height:1.8rem;
+	text-align:center;
+	background-color:#4E96F7;
+	display: inline-block;
+	padding:1.5rem 0rem; 
+}
+.foot .all{
+	width: 50%;
+	font-size:1.6rem;
+	color:#666666;
+	letter-spacing:0.083rem;
+	line-height:1.4rem;
+	display: inline-block;
+	padding: 1.5rem 0;
+	text-align: center;
+	position: relative;
+}
+.foot .all .all_xuan{
+	width: 2.2rem;
+	height:2.2rem;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	margin: -1.1rem 0rem 0 0; 
+	background-size: cover;
+}
